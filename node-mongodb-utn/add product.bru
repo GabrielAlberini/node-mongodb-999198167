@@ -1,0 +1,26 @@
+meta {
+  name: add product
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:1111/products
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "name": "Camiseta básica",
+      "description": "Camiseta de algodón suave, ideal para el uso diario.",
+      "category": "Ropa",
+      "price": 8500,
+      "stock": 120
+    }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

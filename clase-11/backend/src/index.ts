@@ -15,6 +15,7 @@ server.get("/", (req, res) => {
   res.json({ status: true })
 })
 server.use("/products", ProductRouter)
+
 server.get("/search", async (req, res) => {
   try {
     const { category, name, minPrice, maxPrice } = req.query as SearchQuery

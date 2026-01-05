@@ -19,6 +19,7 @@ const authMiddleware = (req: Request, res: Response, next: NextFunction) => {
   const decode = jwt.decode(token, secret as DecodeOptions)
 
   console.log(decode)
+  
 
   next()
 }

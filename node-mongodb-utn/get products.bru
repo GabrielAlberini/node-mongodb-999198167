@@ -7,7 +7,17 @@ meta {
 get {
   url: http://localhost:1111/api/products
   body: json
-  auth: inherit
+  auth: bearer
+}
+
+auth:bearer {
+  token: asdasdasd
+}
+
+body:json {
+  {
+    "name": "Gabriel"
+  }
 }
 
 settings {
